@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS特性 1继承 2覆盖 3叠加 4优先级（范围越大优先级越低 ）*/
+        /* 标签选择器 同名标签都一样 */
+        p {
+            color:red;
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* 类选择器 */
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            line-height: 100px;
+        }
+        .orange{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .size{
+            font-size: 30px;
+            font-weight: 600;
+            font-family: sans-serif ;
+            text-align: center;
+        }
+        /* id选择器 */
+        #green{
+            color: greenyellow;
+            font-size: 30px;
+        }
+        /* 通配符选择器 */
+        /* *{
+            color: hotpink;
+        } */
+        /* 符合选择器 */
+        div.orange{
+            font-size: 30px;
+        }
+        div > span{
+            font-size: 10px;
+            color: pink;
+        }
+        /* 伪类选择器 */
+        a:hover{
+            color: pink;
+            font-size: larger;
+        }     
+        a:active{
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="red size">
+        div1
+        <span>div1</span>
+    </div>
+    <div class="orange">div2</div>
+    <div style="color: green; font-size: 20px;">css_div_try</div>
+    <strong>
+        12345
+    </strong>
+    <em id="green"> 
+        12345
+    </em>
+    <ins>
+        12345
+    </ins>
+    <del>
+        12345
+    </del>
+    
+    <!-- <img src="https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/chat/static/image/logo-icon-white-bg.72df0b1a.png" > -->
+    <a href="http://172.20.30.3/">denglu</a>
+    <a href="./second.html" target="_blank">hello </a>
+    <ul>
+        <li>
+            1
+        </li>
+        <li>
+            2
+        </li>
+        <li>
+            3
+        </li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <dl>
+        <dt>title</dt>
+        <dd>1</dd>
+        <dd>2</dd>
+        <dd>3</dd>
+        <dt>title2</dt>
+        <dd>1</dd>
+        <dd>2</dd>
+        <dd>3</dd> 
+    </dl>
+    <form >
+        text:<input type="text" placeholder="please enter">
+        <br><br>
+        paassword:<input type="password">
+        <br><br>
+        single select 
+            <input type="radio" name="gender"  id="man"> 
+            <label for="man">man</label>
+            <label ><input type="radio" name="gender">woman</label>
+            
+        <br><br>
+        select 
+            <input type="checkbox" checked>basketball
+            <input type="checkbox">football
+            <input type="checkbox">valleyball
+            <input type="checkbox">run
+        <br><br>
+        upload <input type="file" >
+        <br><br>
+        city:
+        <select >
+            <option >beijing</option>
+            <option >shanghai</option>
+            <option selected>ningbo</option>
+        </select>
+        <br><br> 
+        <textarea >please enter</textarea>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>    
+    </form>
+    <p>here is also a p</p>
+
+
+</body>
+</html> 

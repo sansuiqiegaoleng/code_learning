@@ -1,0 +1,7 @@
+F=randn(4)
+A=F(1:2,1:2)
+B=F(3:4,1:2)
+C=F(1:2,3:4)
+D=F(3:4,3:4)
+result1=det(F)
+result2=det(A)*det(D)-det(C)*det(B)
