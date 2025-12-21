@@ -10,4 +10,5 @@ int main(void)
     // 如果 “条件” 为真（非 0），执行并返回表达式1的值； 如果 “条件” 为假（0），执行并返回表达式2的值。
 
     printf("%d", maxValue);
+    printf("hello");
 }
