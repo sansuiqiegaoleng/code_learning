@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Volumes/mac/code/C_code/statistic'
-relocations:     []
-...
